@@ -14,14 +14,14 @@ print("=            Boas Vindas ao Média 2.0            =")
 print("="*50 +reset_color)
 print("")
 
-input("Prescione (ENTER) pra continuar ou (Ctl+C) para sair: ")
+input(green+ "Prescione (ENTER) pra continuar ou (Ctl+C) para sair: " +reset_color)
 
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
 print(green+ "V2.0")
 print("-----" +reset_color)
-print("")
+print(yellow+ "")
 
 nome = str(input("Nome do aluno: "))
 
@@ -30,7 +30,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 print(green+"V2.0")
 print("-----" +reset_color)
-print("")
+print(yellow+ "")
 
 minima = float(input("Informe a nota mínima: "))
 
@@ -61,19 +61,21 @@ print("-----" +reset_color)
 
 if media<minima:
     print("="*35)
-    print("Aluno",nome,", reprovado.")
+    print("Aluno(a), {}:".format(nome))
     print("")
+    print(red+ "Reprovado(a)!" +reset_color)
     print("Nota: {}".format(media))
     print("Mínima: {}".format(minima))
     print("="*35)
 else:
     print("="*35)
-    print("Aluno,",nome,", aprovado.")
+    print("Aluno(a), {}:".format(nome))
     print("")
+    print(green+ "Aprovado(a)!" +reset_color)
     print("Nota: {}".format(media))
     print("Mínima: {}".format(minima))
     print("="*35)
 
 print("")
 
-input("Prescione <ENTER> para sair: ")
+input(green+ "Prescione <ENTER> para sair: " +reset_color)
